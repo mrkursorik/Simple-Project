@@ -1,0 +1,320 @@
+.material-switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+
+.material-switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.material-switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 20px;
+}
+
+/*****************Radiobox********************/
+.material_radio_group {
+  cursor: pointer;
+}
+.material_radiobox {
+  display: none;
+}
+.material_check_radio {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #4092d9;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 5px 0 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: border-color 0.2s linear 0s;
+  transition: border-color 0.2s linear 0s;
+}
+.material_check_radio:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4092d9;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  -ms-transform: translateZ(0) translate(0, 0) scale(0);
+  -webkit-transform: translateZ(0) translate(0, 0) scale(0);
+  transform: translateZ(0) translate(0, 0) scale(0);
+  -webkit-transition: transform 0.2s linear 0s;
+  transition: transform 0.2s linear 0s;
+}
+.material_radiobox:checked ~ .material_check_radio:after {
+  -ms-transform: translateZ(0) translate(0, 0) scale(2);
+  -webkit-transform: translateZ(0) translate(0, 0) scale(2);
+  transform: translateZ(0) translate(0, 0) scale(2);
+}
+.material_radio_group .material_check_radio:active {
+  border-color: #4092d9;
+}
+/*************Switch*************/
+
+/* 	<div class="materail_switch_group">
+			<input class="materail_switch_input" type="checkbox" id="switch_input" />
+			<label class="materail_switch_label" for="switch_input"></label>
+		</div> */
+
+
+.materail_switch_input {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.materail_switch_label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 10px;
+  padding: 2px;
+  background-color: #dddddd;
+  border-radius: 60px;
+}
+.materail_switch_label:before,
+.materail_switch_label:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+}
+.materail_switch_label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 60px;
+  -webkit-transition: background 0.9s ease-out 0s;
+  transition: background 0.9s ease-out 0s;
+}
+.materail_switch_label:after {
+  height: 30px;
+  width: 29px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  top: -10px;
+  -ms-transform: translateZ(0px) translate(0, 0);
+  -webkit-transform: translateZ(0px) translate(0, 0);
+  transform: translateZ(0px) translate(0, 0);
+  -webkit-transition-property: transform, background-color;
+  transition-property: transform, background-color;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.materail_switch_input:checked + .materail_switch_label:before {
+  background-color: #4092d9;
+}
+.materail_switch_input:checked + .materail_switch_label:after {
+  -ms-transform: translateZ(0px) translate(30px, 0);
+  -webkit-transform: translateZ(0px) translate(30px, 0);
+  transform: translateZ(0px) translate(30px, 0);
+  background-color: #4092d9;
+}
+/*********************Tabs***************/
+
+		/* <ul class="nav nav-tabs material_tabs">
+			<li role="presentation" class="active"><a href="#home" class="material_tabs_item" data-toggle="tab">Home</a></li>
+			<li role="presentation"><a href="#profile" class="material_tabs_item" data-toggle="tab">Profile</a></li>
+			<li role="presentation" class="disabled"><a href="javascript:void(0)" class="material_tabs_item">disabled</a></li>
+		</ul>
+		<div id="myTabContent" class="tab-content materail_tab_content">
+			  <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+			  </div>
+			  <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+				<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+			  </div>
+		</div> */
+
+.material_tabs .material_tabs_item {
+  text-align: center;
+  vertical-align: top;
+  padding: 15px 20px;
+  border: none !important;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+  color: #000;
+  -webkit-transition: color 0.5s ease-out 0.1s;
+  transition: color 0.5s ease-out 0.1s;
+}
+.material_tabs .material_tabs_item:hover,
+.material_tabs .material_tabs_item:active,
+.material_tabs .material_tabs_item:focus {
+  background: none;
+  outline: none;
+}
+.material_tabs .material_tabs_item:before,
+.material_tabs .material_tabs_item:after {
+  content: "";
+  display: block;
+  background-color: #4092d9;
+  width: 25%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -ms-transform: translateZ(0px) translate(-50%, 0);
+  -webkit-transform: translateZ(0px) translate(-50%, 0);
+  transform: translateZ(0px) translate(-50%, 0);
+  -webkit-transition: width 0.5s ease-out 0.1s;
+  transition: width 0.5s ease-out 0.1s;
+}
+.material_tabs .material_tabs_item:hover:before,
+.material_tabs .material_tabs_item:hover:after {
+  width: 100%;
+}
+.material_tabs .active .material_tabs_item:before,
+.material_tabs .active .material_tabs_item:after {
+  width: 100%;
+}
+.material_tabs .material_tabs_item:hover,
+.material_tabs .active .material_tabs_item {
+  color: #4092d9;
+}
+.material_tabs .disabled .material_tabs_item:before,
+.material_tabs .disabled .material_tabs_item:after {
+  width: 25%;
+}
+.materail_tab_content {
+  padding: 15px 20px;
+  box-shadow: 0 6px 13px rgba(0, 0, 0, 0.12);
+}
+/*****************Checkbox********************/
+
+	/* <div class="material_checkbox_group">
+			<input type="checkbox" id="checkbox2" name="checkbox" class="material_checkbox material_checkbox_success" />
+			<label class="material_label_checkbox" for="checkbox2">Success</label>
+		</div> */
+
+.material_label_checkbox {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  cursor: pointer;
+  height: 25px;
+}
+.material_label_checkbox:after {
+  content: '';
+  display: block;
+  -ms-transform: scaleX(-1) rotate(135deg);
+  -webkit-transform: scaleX(-1) rotate(135deg);
+  transform: scaleX(-1) rotate(135deg);
+  -ms-transform-origin: left top;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  border-right: 2px solid #cee;
+  border-top: 2px solid #cee;
+  position: absolute;
+  left: 5px;
+  top: 15px;
+  width: 5px;
+  height: 15px;
+}
+.material_label_checkbox:hover:after {
+  border-color: #bdd;
+}
+.material_label_checkbox:before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  left: 0;
+}
+.material_checkbox {
+  display: none;
+}
+.material_checkbox:checked + label:after {
+  -webkit-animation: check 0.8s;
+  animation: check 0.8s;
+  border-color: #4092d9;
+}
+.material_checkbox_success:checked + label:after {
+  border-color: #68c368;
+}
+.material_checkbox_info:checked + label:after {
+  border-color: #6acce9;
+}
+.material_checkbox_warning:checked + label:after {
+  border-color: #f2a12e;
+}
+.material_checkbox_error:checked + label:after {
+  border-color: #c14f4c;
+}
+@-webkit-keyframes check {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  25% {
+    height: 0;
+    width: 5px;
+  }
+  50% {
+    height: 15px;
+    width: 5px;
+  }
+}
+@keyframes check {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  25% {
+    height: 0;
+    width: 5px;
+  }
+  50% {
+    height: 15px;
+    width: 5рx;
+  }
+}
