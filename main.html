@@ -1,0 +1,24 @@
+<div class="col-md-6">
+
+    <form action="" method="POST" id="auth" role="form">
+        <div class="form-group">
+            <label for="login"><i class="fa fa-street-view" aria-hidden="true"></i>
+ Логин</label>
+            <input pattern="[A-Za-z0-9]{4,12}" type="text" class="form-control" id="login" required placeholder="Введите логин">
+        </div>
+        <div class="form-group">
+            <label for="password"><i class="fa fa-key" aria-hidden="true"></i>
+ Пароль</label>
+            <input pattern="[A-Za-z0-9]{4,12}" type="password" class="form-control" id="password" required placeholder="Введите пароль">
+        </div>
+        <button type="submit" id="auth_btn" class="btn btn-success btn-block"><b><i class="fa fa-sign-in" aria-hidden="true"></i> Вход на сайт</b></button>
+    </form>
+
+</div>
+<div class="col-md-6">
+    <!-- Ajax загрузка таблицы пользователей из MySQL -->
+    <div id="users_table">
+        <div class="alert alert-info" role="alert"><b>Возможно, что-то пошло не так.</b></div>
+    </div>
+
+</div>

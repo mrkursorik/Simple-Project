@@ -1,0 +1,91 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<test1>
+		<vagr>4222607002</vagr>
+		<pot>Новокузнецк</pot>
+		<pnaz>Новосибирск</pnaz>
+		<firmo>ТД Океан</firmo>
+		<firmp>РОЗНИН А.В.</firmp>
+		<q>1</q>
+		<v>0.01</v>
+		<p>0.00</p>
+		<itogo>110.00</itogo>
+	</test1>
+	<test1>
+		<vagr>4222607003</vagr>
+		<pot>Новокузнецк</pot>
+		<pnaz>Новосибирск</pnaz>
+		<firmo>ТД Океан</firmo>
+		<firmp>МАГНУМ ПЛЮС</firmp>
+		<q>1</q>
+		<v>0.02</v>
+		<p>0.00</p>
+		<itogo>110.00</itogo>
+	</test1>
+	<test1>
+		<vagr>542607020</vagr>
+		<pot>Новосибирск</pot>
+		<pnaz>Москва</pnaz>
+		<firmo>БАЙТ-ТРАНЗИТ-КОНТИНЕНТ</firmo>
+		<firmp>адидас</firmp>
+		<q>1</q>
+		<v>0.00</v>
+		<p>0.00</p>
+		<itogo>0.00</itogo>
+	</test1>
+	<test1>
+		<vagr>4222607004</vagr>
+		<pot>Новокузнецк</pot>
+		<pnaz>Новосибирск</pnaz>
+		<firmo>ТД Океан</firmo>
+		<firmp>Увалинский_</firmp>
+		<q>1</q>
+		<v>0.01</v>
+		<p>0.00</p>
+		<itogo>110.00</itogo>
+	</test1>
+	<test1>
+		<vagr>542607021</vagr>
+		<pot>Новосибирск</pot>
+		<pnaz>Бийск</pnaz>
+		<firmo>АВТОСТЭЛС в Новосибирске</firmo>
+		<firmp>Чирков С.  Ал.</firmp>
+		<q>2</q>
+		<v>0.42</v>
+		<p>0.00</p>
+		<itogo>336.00</itogo>
+	</test1>
+	<test1>
+		<vagr>702607002</vagr>
+		<pot>Томск</pot>
+		<pnaz>Новосибирск</pnaz>
+		<firmo>БТК Томск</firmo>
+		<firmp>Соловьева Кристина</firmp>
+		<q>1</q>
+		<v>0.00</v>
+		<p>0.00</p>
+		<itogo>0.00</itogo>
+	</test1>
+	<test1>
+		<vagr>4222607005</vagr>
+		<pot>Новокузнецк</pot>
+		<pnaz>Омск</pnaz>
+		<firmo>ТД Океан</firmo>
+		<firmp>СЫРОДЕЛ</firmp>
+		<q>1</q>
+		<v>0.01</v>
+		<p>0.00</p>
+		<itogo>290.00</itogo>
+	</test1>
+	<test1>
+		<vagr>222607001</vagr>
+		<pot>Барнаул</pot>
+		<pnaz>Рубцовск</pnaz>
+		<firmo>УРАЛ-ПРЕСС Кузбасс</firmo>
+		<firmp>Клементьева Светлана Сергеевна</firmp>
+		<q>1</q>
+		<v>0.15</v>
+		<p>0.00</p>
+		<itogo>1062.00</itogo>
+	</test1>
+</VFPData>
