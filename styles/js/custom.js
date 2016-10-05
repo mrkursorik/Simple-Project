@@ -44,13 +44,6 @@ $(document).ready(function() {
 
     }
 
-    function getCookie(name) {
-        var matches = document.cookie.match(new RegExp(
-            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-        ));
-        return matches ? decodeURIComponent(matches[1]) : undefined;
-    }
-
     $("#xml_parse").click(function(e) {
         $.notify('Вы вышли со своей учетной записи.', {
             className: 'success',
@@ -72,8 +65,10 @@ $(document).ready(function() {
     })
 
     var page_name = location.pathname;
-    if (getCookie('session_encrypt') != undefined && page_name.substr(page_name.lastIndexOf("/") + 1) == 'index.html' || page_name.substr(page_name.lastIndexOf("/") + 1) == '') {
-        window.location = 'user.html';
+	if(getCookie('session_encrypt') != undefined)
+    if (page_name.substr(page_name.lastIndexOf("/") + 1) == 'index.html' || page_name.substr(page_name.lastIndexOf("/") + 1) == '') {
+        alert(getCookie('session_encrypt'));
+		window.location = 'user.html';
     }
 
     $("#parser_xml").click(function(e) {
@@ -141,6 +136,13 @@ $(document).ready(function() {
             });
             return null;
         }
+    }
+	
+	function getCookie(name) {
+        var matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
     }
 
     function AjaxLoad(path, payload) {
