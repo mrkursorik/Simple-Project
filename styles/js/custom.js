@@ -1,6 +1,6 @@
 /* 
 @ Developer: Fairlance (vk.com/null.root)
-@ Last modified: 03.10.16  
+@ Last modified: 03.10.16
 */
 $(document).ready(function() {
 
